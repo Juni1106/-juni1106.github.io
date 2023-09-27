@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.left-align{
+    text-align: left;
+}
+
+/* .nav-link{
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#cd5252
+} */
+.nav-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+.nav-items a{
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: rgb(223, 218, 218) ;
+  border-radius: 2px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.nav-items button {
+    padding: 8px 16px;
+    background-color: rgb(251, 246, 246);
+    border: none;
+    border-radius: 8px;
+    margin-left: 32px;
+}
+.nav-items button hover {
+    background-color: #522e2e;
+
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #f8e4b0a5;
+    color: #522e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 90px;
+
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #522e2e;
+    margin-right: 10px;
+}
+
+.nav-items button {
+    background-color: #ffffff;
+    color: #522e2e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-link{
+    background-color: #737373;
+    color:#ffffff;
+}
+
+/* Products */
+.products {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e4c99d;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(180, 122, 35);
+    display: inline-block;
+    width: 300px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #522e2e;
+    margin-top: 10px;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+/* CSS untuk menyusun produk secara horizontal */
+.product-row {
+    display: flex;
+    flex-wrap: nowrap; /* Mencegah pemindahan ke baris baru saat ukuran layar kecil */
+    overflow-x: auto; /* Memungkinkan gulir horizontal jika produk lebih dari lebar layar */
+  }
+  
+  .product-item {
+    flex: 0 0 33.33%; /* Mengatur lebar setiap produk menjadi 33.33% */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optional: Menambahkan spasi antara produk */
+  .product-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  /* Optional: Menghilangkan batas gulir horizontal */
+  .product-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* About Me */
+  .about{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  .about img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    z-index: -1;  
+    filter: brightness(70%);
+    transform: translate();
+}
+  
+  /* CSS untuk judul dan teks dalam elemen hero */
+  .about-me {
+    position: absolute; /* Menjadikan elemen absolut untuk overlay */
+    top: 50%; /* Posisi atas elemen setengah dari tinggi hero */
+    left: 50%; /* Posisi kiri elemen setengah dari lebar hero */
+    transform: translate(-50%, -50%); /* Menggeser elemen ke tengah secara vertikal dan horizontal */
+    text-align: justify; /* Teks rata tengah */
+    color:#522e2e;
+  }
+  
+  .about h1 {
+    font-size: 50px; /* Ukuran font judul */
+    font-weight: 700;
+    margin: 10px 0; /* Jarak atas dan bawah judul */
+  }
+  
+  .about p {
+    font-size: 16px; /* Ukuran font teks deskripsi */
+  }
+
+/* footer{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    background-color: #f8e4b0a5;
+    color: #522e2e;
+} */
+/* style.css */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer {
+  background-color: #e4c99d;
+  color: #522e2e;
+  padding: 10px;
+  text-align: center;
+  flex: 1; /* Footer akan berada di tengah-tengah vertikal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-container {
+  /* Tambahkan gaya jika diperlukan */
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* HERO */ 
+.hero{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  .hero img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    z-index: -1;  
+    filter: brightness(100%);
+    transform: translate();
+}
+  /* CSS untuk judul dan teks dalam elemen hero */
+  .hero-title {
+    position: absolute; /* Menjadikan elemen absolut untuk overlay */
+    top: 50%; /* Posisi atas elemen setengah dari tinggi hero */
+    left: 50%; /* Posisi kiri elemen setengah dari lebar hero */
+    transform: translate(-50%, -50%); /* Menggeser elemen ke tengah secara vertikal dan horizontal */
+    text-align: center; /* Teks rata tengah */
+    color:#522e2e;
+  }
+  
+  .hero h1 {
+    font-size: 50px; /* Ukuran font judul */
+    font-weight: 100;
+    margin: 10px 0; /* Jarak atas dan bawah judul */
+  }
+  
+  .hero p {
+    font-size: 15px; /* Ukuran font teks deskripsi */
+  }
+  
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
