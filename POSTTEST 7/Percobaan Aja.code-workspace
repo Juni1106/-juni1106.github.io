@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/KULIAH/SEMESTER 3/Pemrograman Web/Percobaan Aja"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.embeddedhtml": "html",
+			"*.tcc": "cpp"
+		}
+	}
+}
